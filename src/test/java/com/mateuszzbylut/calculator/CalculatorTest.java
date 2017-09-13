@@ -1,17 +1,17 @@
 package com.mateuszzbylut.calculator;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CalculatorTest {
 
     private static Calculator calculator;
 
-    @BeforeClass
+    @BeforeAll
     public static void init(){
         calculator = new Calculator();
     }
